@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+<meta charset="utf-8">
+<title>Regex + Flexbox</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<section id="container">
+    
+    <form id="formulario">
+        <h1 id="titulo">Formulário</h1>
+        <div class="campo">
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="campo">
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <label for="email">Email:</label>
+            <input type="text" name="email"placeholder="Digite seu email">
+        </div>
+        <div class="campo">
+            <span class="icon"><i class="fas fa-phone"></i></span>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" placeholder="Digite seu telefone">
+        </div>
+        <div class="campo">
+            <span class="icon"><i class="fas fa-id-card"></i></span>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu cpf">
+        </div>
+        <div class="campo">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</section>
+<!-- <script>
+    $(document).ready(function() { 
+        const regexCPF = /(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)/;
+        const regexTEL = /^\(\d{2}\) \d{5}-\d{4}$/;
+
+        function validarCPF() {
+        const cpf = $("#cpf");
+        const cpf2 = cpf.val().replace(/\D/g, '');
+
+        if (regexCPF.test(cpf2)) {
+            // O CPF é válido
+            console.log("CPF válido:", cpf2);
+        } else {
+            // O CPF é inválido
+            console.log("CPF inválido:", cpf2);
+        }
+        }
+        function validarTEL () 
+        {
+            const tel = $("#telefone");
+            const tel2 = tel.val().replace(/)
+        } 
+    })
+
+
+    
+
+</script> -->
+</body>
+</html>

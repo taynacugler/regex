@@ -1,0 +1,72 @@
+body {
+    font-family: 'Nome da Fonte', sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    background-color:#faebd7;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#formulario {
+    color: #9a805e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 auto;
+}
+
+#titulo {
+    color:  #9a805e;
+    margin-bottom: 20px; 
+}
+
+.campo {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+label {
+    color:  #9a805e;
+    width: 220px;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #fef9f4;
+    border-radius: 5px;
+}
+button[type="submit"] {
+    background-color: #9a805e;
+    color: black;
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+button[type="submit"]:hover {
+    background-color: #9d8a72; 
+}
+button[type="submit"]:active {
+    background-color: #706250;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+    color: #9a805e;
+    font-size: 20px;
+}
