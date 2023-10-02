@@ -23,12 +23,12 @@
         <div class="campo">
             <span class="icon"><i class="fas fa-envelope"></i></span>
             <label for="email">Email:</label>
-            <input type="text" name="email"placeholder="Digite seu email">
+            <input type="text" name="email" placeholder="Digite seu email">
         </div>
         <div class="campo">
             <span class="icon"><i class="fas fa-phone"></i></span>
             <label for="telefone">Telefone:</label>
-            <input type="text" name="telefone" placeholder="Digite seu telefone">
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
         </div>
         <div class="campo">
             <span class="icon"><i class="fas fa-id-card"></i></span>
@@ -40,33 +40,6 @@
         </div>
     </form>
 </section>
-<!-- <script>
-    $(document).ready(function() { 
-        const regexCPF = /(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)/;
-        const regexTEL = /^\(\d{2}\) \d{5}-\d{4}$/;
-
-        function validarCPF() {
-        const cpf = $("#cpf");
-        const cpf2 = cpf.val().replace(/\D/g, '');
-
-        if (regexCPF.test(cpf2)) {
-            // O CPF é válido
-            console.log("CPF válido:", cpf2);
-        } else {
-            // O CPF é inválido
-            console.log("CPF inválido:", cpf2);
-        }
-        }
-        function validarTEL () 
-        {
-            const tel = $("#telefone");
-            const tel2 = tel.val().replace(/)
-        } 
-    })
-
-
-    
-
-</script> -->
+<script src="script.js"></script>
 </body>
 </html>
