@@ -1,13 +1,17 @@
-$('#telefone').on('input', function () {
-    var val = this.value.replace(/\D/g, '');
-    this.value = val.replace(/(\d{2})(\d{4,5})(\d{4}).*/, '($1) $2-$3');
-});
+function formatarTel() {
+    var val = $('#telefone').val().replace(/\D/g, '');
+    $('#telefone').val(val.replace(/(\d{2})(\d{4,5})(\d{4}).*/, '($1) $2-$3'));
+}
 
-$('#cpf').on('input', function () {
-    var val = this.value.replace(/\D/g, ''); 
-    this.value = val.replace(/(\d{3})(\d{3})(\d{3})(\d{2}).*/, '$1.$2.$3-$4');
-});
+function formatarCPF() {
+    var val = $('#cpf').val().replace(/\D/g, '');
+    $('#cpf').val(val.replace(/(\d{3})(\d{3})(\d{3})(\d{2}).*/, '$1.$2.$3-$4'));
+}
 
-$('#formulario').submit(function() {
-    alert('Enviado!'); 
+$('#telefone').on('input', formatarTel);
+$('#cpf').on('input', formatarCPF);
+
+$('#formulario').submit(function(event) {
+    event.preventDefault(); 
+    alert('Enviado!');
 });
